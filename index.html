@@ -49,22 +49,21 @@
       </div>
     </nav>
 
-    <header>
-      <div class="container-fluid no-padding">
-        <!-- add header pic and countdown -->
-        <div class="row">
-          <div class="col-md-12 header-pic">
-            <div class="row h-100">
-              <div class="col-md-4"></div>
-              <div class="col-md-4 text-center align-self-center">
-                <div id="countdownClock" class="d-flex flex-row justify-content-around countdown"></div>
-              </div>
-              <div class="col-md-4"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+      <div class="header-video">
+        <img src="videostill.png"
+         class="header-video__media"
+         data-video-URL="https://vimeo.com/262688268"
+         data-teaser="video/teaser-video"
+         data-video-width="560"
+         data-video-height="315">
+         <a href="https://vimeo.com/262688268" class="header-video__play-trigger" id="header-video__play-trigger">Play video</a>
+         <button type="button" class="header-video__close-trigger" id="header-video__close-trigger">Close video</button>
+       </div>
+
+    <!-- Countdown -->
+    <div class="container">
+      <div id="countdownClock" class="d-flex flex-row justify-content-around countdown"></div>
+    </div>
 
     <!-- Story container -->
     <div class="container text-center">
@@ -110,7 +109,7 @@
         </a>
       </div>
     </div>
-    
+
     <!-- RSVP container -->
     <div class="container text-center">
       <h1 id="rsvp" class="my-4">RSVP</h1>
@@ -162,11 +161,17 @@
     <!-- Main script -->
     <script type="text/javascript" src="js/home.js"></script>
 
+    <!-- Video header script -->
+    <script type="text/javascript" src="js/video.js"></script>
+
     <!-- Fontawesome -->
     <script type="text/javascript" src="vendor/fontawesome/fontawesome-all.min.js"></script>
 
     <!-- JQuery countdown -->
     <script type="text/javascript" src="node_modules/jquery-countdown/dist/jquery.countdown.min.js"></script>
+
+    <!-- Modernizr -->
+    <script type="text/javascript" src="vendor/modernizr-custom.js"></script>
 
     <!-- Moment.js -->
     <script type="text/javascript" src="vendor/moment/moment.min.js"></script>

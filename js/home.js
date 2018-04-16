@@ -1,4 +1,13 @@
 $(window).on('load', function() {
+  $('.header-video').each(function(i, elem) {
+        headerVideo = new HeaderVideo({
+          element: elem,
+          media: '.header-video__media',
+          playTrigger: '.header-video__play-trigger',
+          closeTrigger: '.header-video__close-trigger'
+        });
+    });
+
   var weddingDate = moment.tz("2018-12-29 16:00", "America/Vancouver");
 
   $('#countdownClock').countdown(weddingDate.toDate(), function(event) {
@@ -44,4 +53,3 @@ $(window).on('load', function() {
   });
 
 });
-
