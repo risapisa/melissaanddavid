@@ -9,5 +9,39 @@ $(window).on('load', function() {
         + '<div class="flex-column clock-item"><span class="count">%M</span> <label>minutes</label></div>'
         + '<div class="flex-column clock-item"><span class="count">%S</span> <label>seconds</label></div>'));
   });
+
+  var hundredMile = {lat: 51.647254, lng: -121.295770};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 14,
+    center: hundredMile
+  });
+
+  var marker = new google.maps.Marker({
+    position: hundredMile,
+    map: map
+  });
+
+  var request = {
+    location: hundredMile,
+    radius: '10',
+    type: ['hotel']
+  };
+
+  var placesService = new google.maps.places.PlacesService(map);
+
+  placesService.nearbySearch(request, function(results, status) {
+    if (status == google.maps.places.PlacesServiceStatus.OK) {
+    for (var i = 0; i < results.length; i++) {
+      var place = results[i];
+      var placeMarker = new google.maps.Marker({
+        map: map,
+        title: place.name,
+        position: place.geometry.location
+      });
+    }
+  }
+  });
+
 });
 

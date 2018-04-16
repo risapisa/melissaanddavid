@@ -8,7 +8,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Melissa&David</title>
+    <title>Melissa & David</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="wedding-rings.png">
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -112,12 +115,22 @@
     <div class="container text-center">
       <h1 id="rsvp" class="my-4">RSVP</h1>
       <!-- cards with icon and link for response -->
-      <div class="card" style="width: 18rem;">
-        <span class="card-img-top" src="glyphicon glyphicon-envelope" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <div class="card">
+            <div class="card-body">
+              <i class="fas fa-envelope fa-5x"></i>
+              <h5 class="card-title">Yes, I would love to go!</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 align-self-center">
+          <div class="card">
+            <div class="card-body">
+              <i class="fas fa-envelope fa-5x"></i>
+              <h5 class="card-title">Sorry, I can't make it.</h5>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -125,6 +138,7 @@
     <!-- Lodging container -->
     <div class="container text-center">
       <h1 id="lodging" class="my-4">Lodging</h1>
+      <div id="map" class="googleMap"></div>
     </div>
 
     <!-- Gift registry container -->
@@ -145,7 +159,11 @@
     <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Main script -->
     <script type="text/javascript" src="js/home.js"></script>
+
+    <!-- Fontawesome -->
+    <script type="text/javascript" src="vendor/fontawesome/fontawesome-all.min.js"></script>
 
     <!-- JQuery countdown -->
     <script type="text/javascript" src="node_modules/jquery-countdown/dist/jquery.countdown.min.js"></script>
@@ -153,6 +171,10 @@
     <!-- Moment.js -->
     <script type="text/javascript" src="vendor/moment/moment.min.js"></script>
     <script type="text/javascript" src="vendor/moment/moment-timezone-with-data.min.js"></script>
+
+    <!-- Google Maps -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1rjng5mK-qrZHaWIZPOn8djj9RUyplJI&libraries=places"
+  type="text/javascript"></script>
 
   </body>
 
