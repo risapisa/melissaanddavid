@@ -16,7 +16,6 @@
     "browser-sync": "2.23.6",
     "gulp": "^3.9.1",
     "jquery": "3.3.1",
-    "jquery-countdown": "^2.2.0",
     "modernizr": "^3.6.0"
   }
 }

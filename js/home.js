@@ -1,22 +1,11 @@
 $(window).on('load', function() {
-  $('.header-video').each(function(i, elem) {
-        headerVideo = new HeaderVideo({
-          element: elem,
-          media: '.header-video__media',
-          playTrigger: '.header-video__play-trigger',
-          closeTrigger: '.header-video__close-trigger'
-        });
-    });
-
+  var now = new Date();
   var weddingDate = moment.tz("2018-12-29 16:00", "America/Vancouver");
+  var diff = weddingDate / 1000 - now.getTime() / 1000;
 
-  $('#countdownClock').countdown(weddingDate.toDate(), function(event) {
-      $(this).html(event.strftime(''
-        + '<div class="flex-column clock-item"><span class="count">%w</span> <label>weeks</label></div>'
-        + '<div class="flex-column clock-item"><span class="count">%d</span> <label>days</label></div>'
-        + '<div class="flex-column clock-item"><span class="count">%H</span> <label>hours</label></div>'
-        + '<div class="flex-column clock-item"><span class="count">%M</span> <label>minutes</label></div>'
-        + '<div class="flex-column clock-item"><span class="count">%S</span> <label>seconds</label></div>'));
+  var clock = $('#countdownClock').FlipClock(diff, {
+    clockFace: 'DailyCounter',
+    countdown: true
   });
 
   var hundredMile = {lat: 51.647254, lng: -121.295770};

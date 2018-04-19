@@ -6,6 +6,7 @@
 
 body {
   padding-top: 54px;
+  background-color: #e6ecf0;
 }
 
 @media (min-width: 992px) {
@@ -17,6 +18,31 @@ body {
 .no-padding {
   padding-left: 0;
   padding-right: 0;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+}
+
+.navbar .nav-link {
+  color: #fff;
+}
+
+.wedding-brand:before {
+  background: #343a40 url("../images/logo.png") center / 75%;
+  background-repeat: no-repeat;
+  border: 10px solid white;
+  content: '';
+  display: block;
+  height: 200px;
+  margin-left: -22px;
+  position: absolute;
+  left: 10%;
+  bottom: -165px;
+  width: 205px;
+  -webkit-border-radius: 110px;
+  -moz-border-radius: 110px;
+  border-radius: 110px;
 }
 
 .header-pic {
@@ -33,44 +59,23 @@ body {
 }
 
 .carousel-item {
-  height: 65vh;
+  height: 40rem;
   min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .header-video {
   position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
   overflow: hidden;
-}
-
-.header-video iframe,
-.header-video video {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.header-video iframe {
-  height: 100%;
-  width: 100%;
-}
-
-.header-video video {
-  width: 100%;
-}
-
-.header-video__teaser-video {
-  width: 100%;
+  max-width: 100%;
   height: auto;
-}
+} 
 
-.header-video__media {
-  width: 100%;
-  height: inherit;
+.header-video iframe, .header-video object, .header-video embed {
+ position: absolute;
+  top: 0;
+   left: 0;
+    width: 100%;
+     height: 100%;
 }
