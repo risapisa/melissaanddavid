@@ -20,6 +20,14 @@ body {
   padding-right: 0;
 }
 
+nav.navbar {
+  background-color: #D75BA9;
+}
+
+footer {
+  background-color: #D75BA9;
+}
+
 .navbar .navbar-brand {
   color: #fff;
 }
@@ -28,28 +36,70 @@ body {
   color: #fff;
 }
 
+.large-top-margin {
+  margin-top: 7rem;
+}
+
+.gift-color {
+  color: #D75BA9;
+  font-size: 20rem;
+}
+
+.mail-icon {
+  color: #D75BA9;
+}
+
+.nested-img {
+  position: absolute;
+  top: 38%;
+  left: 0;
+  right: 0;
+}
+
+.hudsons-img {
+  height: 10rem;
+  width: 12rem;
+}
+
+.amazon-img {
+  height: 8rem;
+  width: 15rem;
+}
+
+.gift-background:hover .overlay {
+  opacity: 1;
+}
+
 .wedding-brand:before {
-  background: #343a40 url("../images/logo.png") center / 75%;
+  background: #D75BA9 url("../images/weddingLogo.png") center / 100%;
   background-repeat: no-repeat;
   border: 10px solid white;
   content: '';
   display: block;
   height: 200px;
-  margin-left: -22px;
+  margin-left: -90px;
   position: absolute;
   left: 10%;
-  bottom: -165px;
+  bottom: -155px;
   width: 205px;
   -webkit-border-radius: 110px;
   -moz-border-radius: 110px;
   border-radius: 110px;
 }
 
-.header-pic {
-  background-image: url('http://placehold.it/1200x800');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  height: 35rem;
+.card {
+  padding: 2rem;
+  width: 75%;
+}
+
+.card-border {
+  border-top: 3px dotted #e5e5e5;
+  border-bottom: 3px dotted #e5e5e5;
+  border-left: 3px dotted #e5e5e5;
+  border-right: 3px dotted #e5e5e5;
+  box-shadow: inset 0 -1px 0 0 #e5e5e5, inset 0 1px 0 0 #e5e5e5, 0 1px 0 0 #e5e5e5, 0 -1px 0 0 #e5e5e5;
+  margin-bottom: 1px;
+  border-radius: .5rem;
 }
 
 .googleMap {
@@ -65,7 +115,7 @@ body {
 
 .header-video {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 50%;
   height: 0;
   overflow: hidden;
   max-width: 100%;
@@ -73,9 +123,9 @@ body {
 } 
 
 .header-video iframe, .header-video object, .header-video embed {
- position: absolute;
+  position: absolute;
   top: 0;
-   left: 0;
-    width: 100%;
-     height: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
