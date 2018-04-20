@@ -11,7 +11,7 @@
     <title>Melissa & David</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="wedding-rings.png">
+    <link rel="icon" href="images/wedding-rings.png">
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -57,14 +57,15 @@
 
     <!-- Countdown -->
     <div class="container text-center large-top-margin">
-      <h1 id="countdownHeader" class="my-4">Days Until the Wedding!</h1>
-      <div id="countdownClock" class="d-flex flex-row justify-content-around countdown"></div>
+      <h1 id="countdownHeader" class="display-2 title mb-4">Days Until the Wedding!</h1>
+      <div id="countdownClock" class="d-flex flex-row justify-content-around countdown mb-4"></div>
+      <h3 class="display-4 subtitle">We walk down the aisle December 29, 2018</h3>
     </div>
 
     <!-- Story container -->
     <div class="container text-center large-top-margin">
 
-      <h1 id="story" class="my-4">Our Story</h1>
+      <h1 id="story" class="display-2 title mb-4">Our Story</h1>
       <!-- add carousel here for now -->
       <div id="ourStoryCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -116,7 +117,7 @@
 
     <!-- RSVP container -->
     <div class="container text-center large-top-margin">
-      <h1 id="rsvp" class="my-4">RSVP</h1>
+      <h1 id="rsvp" class="display-2 title mb-4">RSVP</h1>
       <!-- cards with icon and link for response -->
       <div class="row">
         <div class="col-md-6 d-flex justify-content-center">
@@ -140,13 +141,13 @@
 
     <!-- Lodging container -->
     <div class="container text-center large-top-margin">
-      <h1 id="lodging" class="my-4">Lodging</h1>
+      <h1 id="lodging" class="display-2 title mb-4">Lodging</h1>
       <div id="map" class="googleMap"></div>
     </div>
 
     <!-- Gift registry container -->
     <div class="container text-center large-top-margin mb-5">
-      <h1 id="gift" class="my-4">Gift registry</h1>
+      <h1 id="gift" class="display-2 title mb-4">Gift Registry</h1>
       <div class="row">
         <div class="col-md-6 align-self-center gift-background">
           <!-- Bay picture and link -->
@@ -167,19 +168,59 @@
 
     <!-- Modal -->
 <div class="modal fade" id="yesResponse" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content card-border">
       <div class="modal-header">
-        <h4 class="modal-title">Feel free to fill out a personal message to us below!</h5>
+        <h4 class="modal-title">Yay! Please feel free to fill out a personal message to us below.</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
+        <!-- Form for email -->
+        <form action="/send-yes-email" method="post">
+          <div class="form-group">
+            <label for="emailName">Your name</label>
+            <input type="text" class="form-control" id="emailNameYes" placeholder="Name here..." name="from" required>
+          </div>
+          <div class="form-group">
+            <label for="emailNumberAttending">How many people will be attending?</label>
+            <input type="number" class="form-control" id="emailName" name="attending" required>
+          </div>
+          <div class="form-group">
+            <label for="emailMessageYes">Your message (optional)</label>
+            <textarea class="form-control" id="emailMessage" rows="3" placeholder="Yes, I am coming!" name="message"></textarea>
+          </div>
+          <button class="btn btn-send" type="submit">Send mail</button>
+        </form>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Send mail</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="noResponse" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content card-border">
+      <div class="modal-header">
+        <h4 class="modal-title">We're so sorry to miss you! Please feel free to leave us a personal message below.</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Form for email -->
+        <form action="/send-no-email" method="post">
+          <div class="form-group">
+            <label for="emailNameNo">Your name</label>
+            <input type="text" class="form-control" id="emailName" placeholder="Name here..." name="from" required>
+          </div>
+          <div class="form-group">
+            <label for="emailMessageNo">Your message (optional)</label>
+            <textarea class="form-control" id="emailMessage" rows="3" placeholder="I am sorry, but I can't make it." name="message"></textarea>
+          </div>
+          <button class="btn btn-send" type="submit">Send mail</button>
+        </form>
       </div>
     </div>
   </div>
@@ -205,7 +246,7 @@
     <script type="text/javascript" src="vendor/fontawesome/fontawesome-all.min.js"></script>
 
     <!-- JQuery countdown -->
-    <script type="text/javascript" src="node_modules/jquery-countdown/dist/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery-countdown/dist/jquery.countdown.min.js"></script>
 
     <!-- Flipclock -->
     <script type="text/javascript" src="vendor/flipclock/flipclock.min.js"></script>

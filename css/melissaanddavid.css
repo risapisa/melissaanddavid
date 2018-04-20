@@ -1,12 +1,14 @@
-/*!
- * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
- */
+/*Color scheme: Burgundy (#800020), Navy (#000080), Gold (#D4AF37)*/
+@import url('https://fonts.googleapis.com/css?family=Euphoria+Script|Ubuntu');
 
 body {
   padding-top: 54px;
   background-color: #e6ecf0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.flip-clock-label {
+  font-family: 'Ubuntu', sans-serif !important;
 }
 
 @media (min-width: 992px) {
@@ -21,11 +23,11 @@ body {
 }
 
 nav.navbar {
-  background-color: #D75BA9;
+  background-color: #800020;
 }
 
 footer {
-  background-color: #D75BA9;
+  background-color: #800020;
 }
 
 .navbar .navbar-brand {
@@ -40,13 +42,28 @@ footer {
   margin-top: 7rem;
 }
 
+.title {
+  color: #D4AF37;
+  font-family: 'Euphoria Script', cursive;
+}
+
+.subtitle {
+  font-family: 'Euphoria Script', cursive;
+  color: #D4AF37;
+}
+
+.btn-send {
+  background-color: #000080;
+  color: #fff;
+}
+
 .gift-color {
-  color: #D75BA9;
+  color: #800020;
   font-size: 20rem;
 }
 
 .mail-icon {
-  color: #D75BA9;
+  color: #000080;
 }
 
 .nested-img {
@@ -71,7 +88,7 @@ footer {
 }
 
 .wedding-brand:before {
-  background: #D75BA9 url("../images/weddingLogo.png") center / 100%;
+  background: #800020 url("../images/weddingLogo.png") center / 100%;
   background-repeat: no-repeat;
   border: 10px solid white;
   content: '';
