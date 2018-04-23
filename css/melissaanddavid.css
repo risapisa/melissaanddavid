@@ -17,6 +17,74 @@ body {
   }
 }
 
+@media (max-width: 992px) {
+  .carousel {
+    height: 30rem;
+  }
+
+  .carousel-inner {
+    height: 30rem;
+  }
+
+  .carousel-indicators {
+    bottom: 32px;
+  }
+
+  .gift-color {
+    font-size: 15rem !important;
+  }
+
+  .hudsons-img {
+    height: 7rem !important;
+    width: 10rem !important;
+  }
+
+  .amazon-img {
+    height: 5rem !important;
+    width: 10rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .wedding-brand:before {
+    margin-left: -3.625rem !important;
+    bottom: -10.6875rem !important;
+  }
+
+  .carousel {
+    height: 20rem;
+  }
+
+  .carousel-inner {
+    height: 20rem;
+  }
+
+  .carousel-indicators {
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .wedding-brand:before {
+    margin-left: -1.625rem !important;
+    bottom: -6.6875rem !important;
+    height: 8.5rem !important;
+    width: 8.8125rem !important;
+  }
+
+  .carousel {
+    height: 15rem;
+  }
+
+  .carousel-inner {
+    height: 15rem;
+  }
+
+  .carousel-indicators {
+    bottom: 15px;
+  }
+}
+
 .no-padding {
   padding-left: 0;
   padding-right: 0;
@@ -30,11 +98,11 @@ footer {
   background-color: #800020;
 }
 
-.navbar .navbar-brand {
+.navbar .nav-link {
   color: #fff;
 }
 
-.navbar .nav-link {
+.navbar svg {
   color: #fff;
 }
 
@@ -93,12 +161,12 @@ footer {
   border: 10px solid white;
   content: '';
   display: block;
-  height: 200px;
-  margin-left: -90px;
+  height: 12.5rem;
+  margin-left: -5.625rem;
   position: absolute;
   left: 10%;
-  bottom: -155px;
-  width: 205px;
+  bottom: -9.6875rem;
+  width: 12.8125rem;
   -webkit-border-radius: 110px;
   -moz-border-radius: 110px;
   border-radius: 110px;

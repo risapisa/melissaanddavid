@@ -27,13 +27,13 @@
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg">
-      <div class="container wedding-brand">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-default fixed-top navbar-expand-lg" role="navigation">
+      <div class="container container-fluid wedding-brand">
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto text-right">
             <li class="nav-item">
               <a class="nav-link" href="#story">Our Story</a>
             </li>
@@ -56,14 +56,14 @@
        </div>
 
     <!-- Countdown -->
-    <div class="container text-center large-top-margin">
+    <div class="container container-fluid text-center large-top-margin">
       <h1 id="countdownHeader" class="display-2 title mb-4">Days Until the Wedding!</h1>
       <div id="countdownClock" class="d-flex flex-row justify-content-around countdown mb-4"></div>
       <h3 class="display-4 subtitle">We walk down the aisle December 29, 2018</h3>
     </div>
 
     <!-- Story container -->
-    <div class="container text-center large-top-margin">
+    <div class="container container-fluid text-center large-top-margin">
 
       <h1 id="story" class="display-2 title mb-4">Our Story</h1>
       <!-- add carousel here for now -->
@@ -116,37 +116,25 @@
     </div>
 
     <!-- RSVP container -->
-    <div class="container text-center large-top-margin">
+    <div class="container container-fluid text-center large-top-margin">
       <h1 id="rsvp" class="display-2 title mb-4">RSVP</h1>
-      <!-- cards with icon and link for response -->
-      <div class="row">
-        <div class="col-md-6 d-flex justify-content-center">
-          <div class="card card-border">
-            <div class="card-body">
-              <a href="#yesResponse" data-toggle="modal" data-target="#yesResponse"><i class="fas fa-envelope fa-5x mail-icon"></i></a>
-              <h5 class="card-title">Yes, I would love to go!</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 d-flex justify-content-center">
-          <div class="card card-border">
-            <div class="card-body">
-              <a href="#noResponse" data-toggle="modal" data-target="#noResponse"><i class="fas fa-envelope fa-5x mail-icon"></i></a>
-              <h5 class="card-title">Sorry, I can't make it.</h5>
-            </div>
-          </div>
-        </div>
+      <span class="fa-layers fa-fw fa-4x mb-4">
+        <i class="fas fa-envelope mail-icon"></i>
+        <i class="fa-inverse fas fa-heart" data-fa-transform="shrink-10 up-4 right-6" style="color:Tomato"></i>
+      </span>
+      <div>
+        To access your personalized RSVP form, please follow the link that we emailed to you.
       </div>
     </div>
 
     <!-- Lodging container -->
-    <div class="container text-center large-top-margin">
+    <div class="container container-fluid text-center large-top-margin">
       <h1 id="lodging" class="display-2 title mb-4">Lodging</h1>
       <div id="map" class="googleMap"></div>
     </div>
 
     <!-- Gift registry container -->
-    <div class="container text-center large-top-margin mb-5">
+    <div class="container container-fluid text-center large-top-margin mb-5">
       <h1 id="gift" class="display-2 title mb-4">Gift Registry</h1>
       <div class="row">
         <div class="col-md-6 align-self-center gift-background">
@@ -228,7 +216,7 @@
 
     <!-- Footer -->
     <footer class="py-5">
-      <div class="container">
+      <div class="container container-fluid">
         <p class="m-0 text-center text-white">Copyright &copy; Risa Newyear-Ramirez 2018</p>
         <p class="m-0 text-center text-white">Logo made with <a href="http://logomakr.com" title="Logo Makr">LogoMakr.com</a></p>
       </div>
