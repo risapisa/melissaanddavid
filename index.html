@@ -130,12 +130,47 @@
     <!-- Lodging container -->
     <div class="container container-fluid text-center large-top-margin">
       <h1 id="lodging" class="display-2 title mb-4">Lodging</h1>
-      <div id="map" class="googleMap"></div>
+      <div class="mb-4">The wedding will be held in 100 Mile House, British Columbia, Canada.
+        We recommend to book a hotel as soon as possible!
+        Click on the icons below to see more information about each hotel listing.</div>
+      <div id="map" class="googleMap mb-4"></div>
+      <div id="listing" class="listing">
+        <div class="list-group" id="resultsList">
+        </div>
+      </div>
+      <div style="display: none">
+        <div id="info-content">
+          <table>
+            <tr id="iw-url-row" class="iw_table_row">
+              <td id="iw-icon" class="iw_table_icon pr-2"></td>
+              <td id="iw-url"></td>
+            </tr>
+            <tr id="iw-address-row" class="iw_table_row">
+              <td class="iw_attribute_name">Address:</td>
+              <td id="iw-address"></td>
+            </tr>
+            <tr id="iw-phone-row" class="iw_table_row">
+              <td class="iw_attribute_name">Telephone:</td>
+              <td id="iw-phone"></td>
+            </tr>
+            <tr id="iw-rating-row" class="iw_table_row">
+              <td class="iw_attribute_name">Rating:</td>
+              <td id="iw-rating"></td>
+            </tr>
+            <tr id="iw-website-row" class="iw_table_row">
+              <td class="iw_attribute_name">Website:</td>
+              <td id="iw-website"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
     </div>
 
     <!-- Gift registry container -->
     <div class="container container-fluid text-center large-top-margin mb-5">
       <h1 id="gift" class="display-2 title mb-4">Gift Registry</h1>
+      <div class="mb-4">If you would like to give us a gift, here are the links for
+      gift registries:</div>
       <div class="row">
         <div class="col-md-6 align-self-center gift-background">
           <!-- Bay picture and link -->

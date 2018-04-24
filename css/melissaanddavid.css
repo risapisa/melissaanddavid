@@ -189,7 +189,7 @@ footer {
 
 .googleMap {
   width: 100%;
-  height: 20rem;
+  height: 30rem;
   background-color: grey;
 }
 
@@ -205,7 +205,7 @@ footer {
   overflow: hidden;
   max-width: 100%;
   height: auto;
-} 
+}
 
 .header-video iframe, .header-video object, .header-video embed {
   position: absolute;
@@ -213,4 +213,14 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.listing {
+  width: 50%;
+  margin: auto;
+  text-align:left !important;
+}
+
+.bedIcon {
+  color: #000080;
 }
