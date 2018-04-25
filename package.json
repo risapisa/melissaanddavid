@@ -3,23 +3,16 @@
   "name": "melissaanddavid",
   "version": "1.0.0",
   "description": "A website for the wedding of Melissa & David.",
-  "author": "Start Bootstrap",
-  "contributors": [
-    "David Miller (http://davidmiller.io/)"
-  ],
+  "author": "Risa Newyear-Ramirez",
   "repository": {
     "type": "git",
     "url": "https://github.com/risapisa/melissaanddavid.git"
   },
   "dependencies": {
-    "body-parser": "^1.18.2",
     "bootstrap": "4.0.0",
     "browser-sync": "2.23.6",
-    "express": "^4.16.3",
     "jquery": "3.3.1",
     "modernizr": "^3.6.0",
-    "nodemailer": "^4.6.4",
-    "nodemon": "^1.17.3",
     "npm": "^6.0.0"
   },
   "scripts": {
