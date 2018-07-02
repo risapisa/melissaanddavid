@@ -100,6 +100,7 @@ footer {
 
 .navbar .nav-link {
   color: #fff;
+  text-decoration: none !important;
 }
 
 .navbar svg {
@@ -223,4 +224,30 @@ footer {
 
 .bedIcon {
   color: #000080;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+.text-white a {
+  color: white;
+  text-decoration: none !important;
+}
+
+.venue-img {
+  border: 10px solid white;
+  -webkit-border-radius: 110px;
+  -moz-border-radius: 110px;
+  border-radius: 110px;
+}
+
+.venue-info {
+  background: white;
+  padding: 1rem;
+}
+
+.venue-info p {
+  margin-bottom: 0;
 }

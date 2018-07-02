@@ -157,4 +157,13 @@ $(window).on('load', function() {
         }
       }
 
+      var venueMap = new google.maps.Map(document.getElementById('venue-map'), {
+        zoom: 15,
+        center: hundredMile,
+        mapTypeControl: false,
+        panControl: false,
+        zoomControl: false,
+        streetViewControl: false
+      });
+
 });

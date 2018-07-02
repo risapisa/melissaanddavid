@@ -44,7 +44,13 @@
               <a class="nav-link" href="#lodging">Lodging</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#venue">Venue</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#gift">Gift Registry</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#song">Song Requests</a>
             </li>
           </ul>
         </div>
@@ -53,7 +59,9 @@
 
       <div class="header-video">
         <iframe src="https://player.vimeo.com/video/262688268?byline=0&portrait=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-       </div>
+      </div>
+
+      <div class="container text-center">Video by <a href="https://vimeo.com/user59489190">Reverb Films</a></div>
 
     <!-- Countdown -->
     <div class="container container-fluid text-center large-top-margin">
@@ -166,6 +174,29 @@
       </div>
     </div>
 
+    <!-- Venue information container -->
+    <div class="container container-fluid text-center large-top-margin mb-5">
+      <h1 id="venue" class="display-2 title mb-4">Information about the Venues</h1>
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <img class="venue-img" src="images/stjudesroad.jpg" height="300" width="400">
+          <div>Image by <a href="http://www.rcdk.org/williams-lake/st-judes-catholic-church">Roman Catholic Diocese of Kamloops</a></div>
+          <div class="venue-info mt-4"><p>The ceremony will be held at <a href="http://www.rcdk.org/williams-lake/st-judes-catholic-church">St. Jude's Catholic Church</a> in 100 Mile House.
+          St. Jude's serves the 100 Mile community, as well as the communities of Lac la Hache, Bridge Lake, and Canime Lake. Mass and Service times are located on their website.</p></div>
+        </div>
+        <div class="col-md-6 align-self-center">
+          <img class="venue-img" src="images/thehillshealthranch.jpg" height="300" width="400">
+          <div>Image by <a href="https://www.booking.com/hotel/ca/the-hills-health.en-gb.html">Booking.com</a></div>
+          <div class="venue-info mt-4"><p>The reception will be held at <a href="http://www.sprucehillresort.com/">Spruce Hill Resort & Spa</a> in 108 Mile House.
+          The Hills is a popular wellness resort and it offers many activities for guests to enjoy, such as showshoeing, skiing, horseback riding, hiking, mountain biking, and canoeing.
+          There are two restaurants on-site and three lounges.</p></div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="venue-map" class="googleMap mt-4"></div>
+      </div>
+    </div>
+
     <!-- Gift registry container -->
     <div class="container container-fluid text-center large-top-margin mb-5">
       <h1 id="gift" class="display-2 title mb-4">Gift Registry</h1>
@@ -183,10 +214,15 @@
           <!-- Amazon Wishlist picture and link -->
           <i class="fas fa-gift gift-color"></i>
           <div class="nested-img">
-            <img class="amazon-img" src="images/amazonwishlist.jpg">
+            <img class="amazon-img" src="images/westelm.png">
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Song requests container -->
+    <div class="container container-fluid text-center large-top-margin mb-5">
+      <h1 id="song" class="display-2 title mb-4">Request a song!</h1>
     </div>
 
     <!-- Modal -->
@@ -252,7 +288,7 @@
     <!-- Footer -->
     <footer class="py-5">
       <div class="container container-fluid">
-        <p class="m-0 text-center text-white">Copyright &copy; Risa Newyear-Ramirez 2018</p>
+        <p class="m-0 text-center text-white">Copyright &copy; <a href="http://www.linkedin.com/in/risanewyearramirez">Risa Newyear-Ramirez 2018</a></p>
         <p class="m-0 text-center text-white">Logo made with <a href="http://logomakr.com" title="Logo Makr">LogoMakr.com</a></p>
       </div>
       <!-- /.container -->
