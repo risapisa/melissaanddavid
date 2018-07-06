@@ -9,12 +9,15 @@
     "url": "https://github.com/risapisa/melissaanddavid.git"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
     "bootstrap": "4.0.0",
     "browser-sync": "2.23.6",
     "express": "^4.16.3",
     "jquery": "3.3.1",
     "modernizr": "^3.6.0",
-    "npm": "^6.0.0"
+    "nodemailer": "^4.6.7",
+    "npm": "^6.0.0",
+    "requirejs": "^2.3.5"
   },
   "scripts": {
     "start": "node server.js"

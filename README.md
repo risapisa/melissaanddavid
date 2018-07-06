@@ -1,4 +1,7 @@
 # melissaanddavid
+A website for my best friends Melissa and David, celebrating their future wedding.
+
+Made with Bootstrap, Flipclock, FontAwesome, Moment.js, jQuery and jQuery countdown, and Modernizr.
 
 ### Local set-up of the project:
 * Clone this repo on your local machine

@@ -232,6 +232,25 @@
     <!-- Song requests container -->
     <div class="container container-fluid text-center large-top-margin mb-5">
       <h1 id="song" class="display-2 title mb-4">Request a song!</h1>
+      <div class="row">
+        <div class="col-md-8 songRequestForm">
+          <form id="songRequests" action="/send-email" method="post">
+            <div class="form-group row">
+              <label class="col-sm-2 col-form-label" for="songRequesterName">Your Name</label>
+              <input type="text" class="form-control col-sm-10" id="songRequesterName" placeholder="Enter your name..." name="from">
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-2 col-form-label" for="artistName">Artist Name</label>
+              <input type="text" class="form-control col-sm-10" id="artistName" placeholder="Enter the artist's name here..." name="artistName">
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-2 col-form-label" for="songName">Song Name</label>
+              <input type="text" class="form-control col-sm-10" id="songName" placeholder="Enter the song name here..." name="songName">
+            </div>
+            <button type="submit" class="btn btn-send">Submit</button>
+          </form>
+        </div>
+      </div>
     </div>
 
     <!-- Footer -->
@@ -269,6 +288,9 @@
     <!-- Google Maps -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1rjng5mK-qrZHaWIZPOn8djj9RUyplJI&libraries=places"
   type="text/javascript"></script>
+
+  <!-- Require.js -->
+    <script type="text/javascript" src="js/require.js"></script>
 
   </body>
 

@@ -286,3 +286,7 @@ a {
 .venue-map {
   height: 25rem;
 }
+
+.songRequestForm {
+  margin: 0 auto;
+}
