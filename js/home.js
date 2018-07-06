@@ -157,8 +157,12 @@ $(window).on('load', function() {
         }
       }
 
+      //Set up venue map and directions
+      var StJudesChurch = {lat: 51.624362, lng: -121.274605};
+      var TheHills = {lat: 51.735772, lng:  -121.325540};
+
       var venueMap = new google.maps.Map(document.getElementById('venue-map'), {
-        zoom: 15,
+        zoom: 7,
         center: hundredMile,
         mapTypeControl: false,
         panControl: false,
@@ -166,4 +170,22 @@ $(window).on('load', function() {
         streetViewControl: false
       });
 
+      var directionsService = new google.maps.DirectionsService();
+      var directionsRenderer = new google.maps.DirectionsRenderer();
+      directionsRenderer.setMap(venueMap);
+      directionsRenderer.setPanel(document.getElementById('directions-text'))
+      directionsService.route({
+        origin: StJudesChurch,
+        destination: TheHills,
+        travelMode: 'DRIVING',
+        provideRouteAlternatives: true,
+        avoidFerries: false,
+        avoidHighways: false,
+        avoidTolls: false
+      }, function(result, status) {
+        if (status == 'OK') {
+          directionsRenderer.setDirections(result);
+        }
+      });
+  
 });
