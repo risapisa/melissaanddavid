@@ -205,21 +205,27 @@
       <h1 id="gift" class="display-2 title mb-4">Gift Registry</h1>
       <div class="mb-4">If you would like to give us a gift, here are the links for
       gift registries:</div>
-      <div class="row">
-        <div class="col-md-6 align-self-center gift-background">
-          <!-- Bay picture and link -->
-          <i class="fas fa-gift gift-color"></i>
-          <div class="nested-img">
-            <img class="hudsons-img" src="images/hudsons-bay-co-logo.jpg">
-          </div>
+      <div class="row gift-registry-cards">
+        <div class="col-md-6">
+        <div class="gift-card" ontouchstart="this.classList.toggle('hover');">
+          <div class="flip">
+            <div class="front"><i class="fas fa-gift gift-color"></i></div>
+              <div class="back">
+                <img src="images/hudsons-bay-co-logo.png">
+              </div>
+            </div>
         </div>
-        <div class="col-md-6 align-self-center gift-background">
-          <!-- Amazon Wishlist picture and link -->
-          <i class="fas fa-gift gift-color"></i>
-          <div class="nested-img">
-            <img class="amazon-img" src="images/westelm.png">
-          </div>
+      </div>
+      <div class="col-md-6">
+        <div class="gift-card" ontouchstart="this.classList.toggle('hover');">
+          <div class="flip">
+            <div class="front"><i class="fas fa-gift gift-color img"></i></div>
+              <div class="back">
+                <img class="img" src="images/westelm.png">
+              </div>
+            </div>
         </div>
+      </div>
       </div>
     </div>
 
