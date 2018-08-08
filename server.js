@@ -29,13 +29,13 @@ var port_number = process.env.PORT || 3000;
         port: 465,
         secure: true,
         auth: {
-            user: 'risapisa@gmail.com',
-            pass: 'xxxxx'
+            user: process.env.EMAIL,
+            pass: process.env.EMAIL_PWD
         }
       });
       let mailOptions = {
-          from: 'risapisa@gmail.com', // sender address
-          to: 'risapisa@gmail.com', // list of receivers
+          from: process.env.EMAIL, // sender address
+          to: process.env.EMAIL, // list of receivers
           subject: 'Song Request', // Subject line
           text: 'Song Name: ' + req.body.songName + ', Artist Name: ' + req.artistName, // plain text body
           html: '<p>Song Name: ' + req.body.songName + '</p><p>Artist Name: ' + req.artistName + '</p>' // html body
