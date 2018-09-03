@@ -187,5 +187,5 @@ $(window).on('load', function() {
           directionsRenderer.setDirections(result);
         }
       });
-  
+
 });

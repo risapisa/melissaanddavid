@@ -29,23 +29,28 @@ var port_number = process.env.PORT || 3000;
         port: 465,
         secure: true,
         auth: {
-            user: process.env.EMAIL,
-            pass: process.env.EMAIL_PWD
+            user: process.env.USERMAIL,
+            pass: process.env.USERPWD
         }
       });
       let mailOptions = {
-          from: process.env.EMAIL, // sender address
-          to: process.env.EMAIL, // list of receivers
-          subject: 'Song Request', // Subject line
-          text: 'Song Name: ' + req.body.songName + ', Artist Name: ' + req.artistName, // plain text body
-          html: '<p>Song Name: ' + req.body.songName + '</p><p>Artist Name: ' + req.artistName + '</p>' // html body
+          from: process.env.USERMAIL, // sender address
+          to: process.env.USERMAIL, // list of receivers
+          subject: 'Song Request from ' + req.body.songRequesterName + '', // Subject line
+          text: 'Song Name: ' + req.body.songName + ', Artist Name: ' + req.body.artistName, // plain text body
+          html: '<p>Song Name: ' + req.body.songName + '</p><p>Artist Name: ' + req.body.artistName + '</p>' // html body
       };
 
-      transporter.sendMail(mailOptions, (error, info) => {
+      transporter.sendMail(mailOptions, function(error, info) {
           if (error) {
-              return console.log(error);
+            console.log(error);
+            res.send(500);
           }
-          console.log('Message %s sent: %s', info.messageId, info.response);
-              res.render('index');
+          else if (info) {
+            console.log('Message %s sent: %s', info.messageId, info.response);
+            res.send(200);
+          }
       });
+
+      res.send('Thank you! Your request has been sent. Please use the back button on the browser to navigate back to the website.');
   });
